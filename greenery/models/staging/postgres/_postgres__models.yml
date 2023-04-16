@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_addresses
+    description: Contains addresses for all the clients 
+  - name: stg_events
+    description: Contains information about all the events 
+  - name: stg_order_items
+    description: Contains information about orders at the line level 
+  - name: stg_orders
+    description: Contains information about the orders at individual order level 
+  - name: stg_products
+    description: Contains information about the products
+  - name: stg_promos
+    description: Contains information about the promos
+  - name: stg_users
+    description: Contains information about the users 
