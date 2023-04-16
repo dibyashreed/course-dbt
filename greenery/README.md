@@ -1,15 +1,23 @@
-Welcome to your new dbt project!
+# Analytics Engineering with dbt - Greenery Analysis
 
-### Using the starter project
+## How many users do we have?
 
-Try running the following commands:
-- dbt run
-- dbt test
+We have 130 users
 
+## On average, how many orders do we receive per hour?
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+On average, we received 15.04 orders per hour. 
+
+## On average, how long does an order take from being placed to being delivered?
+
+On average, it takes 3.89 days from the oder being placed to the order getting delivered. 
+
+## How many users have only made one purchase? Two purchases? Three+ purchases?
+
+Count of users having 1 order: 25
+Count of users having 2 orders : 28
+Count of users having more than 3 orders: 37
+
+## On average, how many unique sessions do we have per hour?
+
+On average, there were 148.04 unique sessions per hour. 
