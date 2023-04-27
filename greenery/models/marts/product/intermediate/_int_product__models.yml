@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_product_site_activity_daily
+    description: Daily product page views and adds to cart.
+    columns:
+      - name: unique_key
+        tests:
+          - unique
+          - not_null
+  - name: int_daily_orders_by_product
+    description: Daily product orders.
+    columns:
+      - name: unique_key
+        tests:
+          - unique
+          - not_null

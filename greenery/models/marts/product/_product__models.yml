@@ -1,0 +1,9 @@
+version: 2
+
+models:
+
+  - name: fact_page_views
+    description: 'Data mart on page views & products'
+
+  - name: fact_session_events
+    description: 'Data mart about user sessions and the type of events'

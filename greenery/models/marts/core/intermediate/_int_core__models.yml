@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_core_user_address
+    description: Contains details about users and their addresses
+    columns:
+      - name: unique_key
+        tests:
+          - unique
+          - not_null
