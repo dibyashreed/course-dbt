@@ -90,6 +90,29 @@ On average, there were 16.33 unique sessions per hour.
 
 #### What is our user repeat rate? Repeat Rate = Users who purchased 2 or more times / users who purchased
 
+with user_orders_count as (
+  select 
+  user_id
+  , count(order_id) as order_count
+  from DEV_DB.DBT_DIBYASHREEDIKSHITGMAILCOM.STG_ORDERS
+  group by 1
+)
+
+select 
+count(user_id) as total_purchases
+, count_if(order_count>1) as repeat_purchases,
+, count_if(order_count>1)/count(user_id) * 100 as repeat_purchase_rate_pct
+from user_orders_count
+
+
+Repeat purchase rate is 79.838%
+
 #### What are good indicators of a user who will likely purchase again? What about indicators of users who are likely NOT to purchase again? If you had more data, what features would you want to look into to answer this question?
 
+Users who frequently browse and add products to cart, maybe these users have previously left a product review about howmuch they enjoyed the product. 
+
+If user has been active for a while and they add products to cart but they are yet to make a purchase, or if a user has made a purchase and considerable time has passed since then and they are not even active then there is a high likelihood that they will not purchase again. 
+
 #### Explain the product mart models you added. Why did you organize the models in the way you did?
+
+I added a fact table about daily product activity which lets us see order level information about exactly which products are being bought on a given day. 
